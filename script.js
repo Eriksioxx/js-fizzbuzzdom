@@ -14,7 +14,7 @@ for (let x = 1; x <= 100; x++) {
     if (x % 3 === 0 && x % 5 === 0) {
         console.log('FizzBuzz');
 
-        let element = `<div class="square">FizzBuzz</div>`;
+        let element = `<div class="square square-green">FizzBuzz</div>`;
         divSquares.innerHTML += element;
     }
 
@@ -28,7 +28,7 @@ for (let x = 1; x <= 100; x++) {
     else if (x % 5 === 0) {
         console.log('Buzz');
 
-        let element = `<div class="square">Buzz</div>`;
+        let element = `<div class="square square-red">Buzz</div>`;
         divSquares.innerHTML += element;
     }
 
@@ -38,11 +38,4 @@ for (let x = 1; x <= 100; x++) {
         let element = `<div class="square">${x}</div>`;
         divSquares.innerHTML += element;
     }
-
 }
-
-const elementSquare = document.querySelectorAll(".square");
-
-elementSquare.style.transitionDelay = '50ms';
-elementSquare.style.transitionProperty = 'background-color';
-elementSquare.style.transitionDuration = '2s';
