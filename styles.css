@@ -18,3 +18,17 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+.square {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    background-color: greenyellow;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.square-blue {
+background-color: blue;
+}
