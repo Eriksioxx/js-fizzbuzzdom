@@ -8,6 +8,7 @@ body {
     font-family: sans-serif;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -43,6 +44,11 @@ body {
 .square-green {
     background-color: #646368;
 }
+
+.square:hover {
+    filter: scale(1.2);
+}
+
 
 .puff-in-center {
 	animation: puff-in-center 0.7s linear both;
